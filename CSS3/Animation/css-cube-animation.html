@@ -4,7 +4,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>CSS3 Cube</title>
+		<title>Hyeonsu Jin version of CSS3 Cube</title>
 		<style>
 			.container {
 				width: 200px;
@@ -25,7 +25,7 @@
 				-webkit-transform: rotate3d(0, 0, 1, 180deg);
 			}
 
-			.cube, .cube2, .cube3, .cube4, .cube5 {
+			.cube, .cube4, .cube5 {
 				position: relative;
 				width: 200px;
 				opacity: 0.7;
@@ -39,7 +39,7 @@
 				-webkit-animation-timing-function: linear;
 			}
 
-			.cube:hover, .cube2:hover, .cube3:hover, .cube4:hover, .cube5:hover {
+			.cube:hover, .cube4:hover, .cube5:hover {
 				animation-play-state: paused;
 				-webkit-animation-play-state: paused;
 			}
@@ -50,30 +50,16 @@
 				height: 200px;
 			}
 
-			.cube2 div {
-				position: absolute;
-				top: -250px;
-				width: 200px;
-				height: 200px;
-			}
-
-			.cube3 div {
-				position: absolute;
-				top: 250px;
-				width: 200px;
-				height: 200px;
-			}
-
 			.cube4 div {
 				position: absolute;
-				left: 250px;
+				left: 400px;
 				width: 200px;
 				height: 200px;
 			}
 
 			.cube5 div {
 				position: absolute;
-				left: -250px;
+				left: -400px;
 				width: 200px;
 				height: 200px;
 			}
@@ -95,7 +81,7 @@
 			}
 
 			.right {
-				background-color: orange;
+				background-color: red;
 				transform: rotateY(-270deg) translateX(100px);
 				-webkit-transform: rotateY(-270deg) translateX(100px);
 				transform-origin: top right;
@@ -103,7 +89,7 @@
 			}
 
 			.left {
-				background-color: yellow;
+				background-color: red;
 				transform: rotateY(270deg) translateX(-100px);
 				-webkit-transform: rotateY(270deg) translateX(-100px);
 				transform-origin: center left;
@@ -111,7 +97,7 @@
 			}
 
 			.top {
-				background-color: green;
+				background-color: black;
 				transform: rotateX(-90deg) translateY(-100px);
 				-webkit-transform: rotateX(-90deg) translateY(-100px);
 				transform-origin: top center;
@@ -119,7 +105,7 @@
 			}
 
 			.bottom {
-				background-color: blue;
+				background-color: red;
 				transform: rotateX(90deg) translateY(100px);
 				-webkit-transform: rotateX(90deg) translateY(100px);
 				transform-origin: bottom center;
@@ -127,7 +113,7 @@
 			}
 
 			.front {
-				background-color: purple;
+				background-color: red;
 				transform: translateZ(100px);
 				-webkit-transform: translateZ(100px);
 			}
